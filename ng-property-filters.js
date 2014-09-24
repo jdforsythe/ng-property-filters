@@ -43,7 +43,7 @@
 				}
 
 				for (var j=0, slen=searchStrings.length; j<slen; j++) {
-					if(searchStrings[j].indexOf(needle) !== -1) {
+					if(searchStrings[j].toLowerCase().indexOf(needle.toLowerCase()) !== -1) {
 						results.push(testObj);
 						break;
 					}
