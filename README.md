@@ -141,8 +141,7 @@ app = angular.module('myApp', ['ui.bootstrap','propFilters']);
 </body>
 <script type="text/ng-template" id="templates/states.html">
 <a>
-	<!-- load flag thumbnail images from wikimedia -->
-  <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16">
+  <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="16" />
   <span bind-html-unsafe="match.model.abbreviation | typeaheadHighlight:query"></span>
   <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
 </a>
