@@ -3,7 +3,7 @@
 	var getAllStringProperties = function(obj) {
 		var strings = [];
 		for (var prop in obj) {
-		  if (obj.hasOwnProperty(prop) && typeof obj[prop] === 'string') {
+		  if (obj.hasOwnProperty(prop) && typeof obj[prop] === 'string' && prop !== '$$hashKey') { // only get strings and ignore the $$hashKey property added by angularjs
 		    strings.push(obj[prop]);
 		  }
 		}
