@@ -80,6 +80,9 @@
 		// the actual filter function - haystack comes from angular, options specified as an object literal in directive
 		return function(haystack, options) {
 			var needle = options.needle;
+
+			if (typeof needle === 'undefined' || needle == '') return haystack;
+
 			var allProperties = options.allProperties || false;
 			var properties = options.properties || false;
 
