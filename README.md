@@ -70,7 +70,7 @@ I wanted a fuzzy search that would work with ui-bootstrap's typeahead example of
 Include ui-bootstrap and ng-property-filters in your HTML and as dependencies in your app module.
 
 ```javascript
-app = angular.module('myApp', []);
+app = angular.module('myApp', ['ui.bootstrap','propFilters']);
 
 (function() {
   function MyController($scope) {
